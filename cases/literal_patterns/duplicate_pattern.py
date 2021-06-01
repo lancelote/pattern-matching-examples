@@ -1,0 +1,6 @@
+def foo(x):
+    match x:
+        case "foo":
+            ...
+        case "foo":
+            ...
