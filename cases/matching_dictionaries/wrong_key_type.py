@@ -7,7 +7,9 @@ def foo(param):
 
     match param:
         case {bar: "one"}:  # <- syntax error
-            print("match")
+            print("match 1")
+        case {_: "two"}:  # <- syntax error
+            print("match 2")
 
 
 if __name__ == "__main__":
