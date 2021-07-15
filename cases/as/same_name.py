@@ -1,6 +1,6 @@
 def test(foo):
     match foo:
-        case [(1, 2 as bar) as bar, (3, 4) as bar] :
+        case [(1, 2 as bar) as bar, (3, 4) as bar]:
             print(bar)
 
 
