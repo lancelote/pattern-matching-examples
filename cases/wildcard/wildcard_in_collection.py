@@ -1,6 +1,6 @@
 def foo(param):
     match param:
-        case [start, * _, end]:
+        case [start, *_, end]:
             print(start, end)
 
 
