@@ -1,6 +1,6 @@
 def simplify_expr(tokens):
     match tokens:
-        case [('(' | '[') as l, * expr, (')' | ']') as r] if (l + r) in ('()', '[]'):
+        case [('(' | '[') as l, *expr, (')' | ']') as r] if (l + r) in ('()', '[]'):
             return simplify_expr(expr)
         case [0, ('+' | '-') as op, right]:
             return UnaryOp(op, right)
